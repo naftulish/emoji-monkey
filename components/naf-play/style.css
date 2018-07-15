@@ -1,0 +1,18 @@
+naf-play{
+    display: flex;
+    flex-flow: wrap;
+    width: 64em;
+    height: 90%;
+    margin:  auto;
+    cursor: url('../../assets/images/coconut.png'),auto;
+}
+
+.gameUnit{
+    background: #ced8ce;
+    width: 5em;
+    height: 5em;
+    margin: 0.7em;
+    box-shadow: inset 0px 6px 18px grey;
+    overflow:  hidden;
+    border-radius: 0.3em;
+}

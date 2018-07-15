@@ -1,0 +1,20 @@
+naf-monkey{
+    position:  relative;
+    top: 100%;
+}
+
+naf-monkey img{
+    width:  100%;
+    height:  100%;
+}
+/*
+.monkeyMove{
+   animation: run 2s linear; 
+}
+
+@keyframse run{
+    0%{top: 100%;}
+    50%{top: 0%;}
+    100%{top: 100%;}
+}
+*/
