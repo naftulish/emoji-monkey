@@ -6,7 +6,7 @@ class NafMonkey extends HTMLElement{
     }    
 
     templete(){
-       this.innerHTML = `<img src="assets/images/monkey.png"/>`
+       this.innerHTML = `<img id="monkey" src="assets/images/monkey.png"/>`
     }
 
 }

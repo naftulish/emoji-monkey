@@ -21,24 +21,18 @@ header h4{
     text-shadow: 0px 0px 2px #d7f3f5;
     font-family: 'Berkshire Swash', cursive;
 }
-header button{height: 4em;position:  absolute;width:  4em;top: 0.6em;right: 1.8em;/* padding:  15px 30px; */background: #075E54;border: none;border-radius: 50%;color: white;font-family: 'Berkshire Swash', cursive;font-size: 1.9em;cursor:  pointer;}
+
+header button{height: 3.9em;position:  absolute;width:  4em;top: 0.6em;right: 1.8em;/* padding:  15px 30px; */background: #075E54;border: none;border-radius: 50%;color: white;font-family: 'Berkshire Swash', cursive;font-size: 1.9em;cursor:  pointer;}
 
 header button:hover{
     background:  gray;
     color:  white;
 }
 
-#score{
-    /* position:  absolute; */
-    /* direction:  rtl; */
-    /* top: 5.5em; */
-    /* font-size: 1.3em; */
-    /* left: 8em; */
-}
 
-#scoreWrap{color: #7d7d7c;position:  absolute;font-family: 'Berkshire Swash', cursive;top: 0.3em;font-size: 1em;right: 17em;padding: 0.4em;border-radius: 0.3em;}
+#scoreWrap{color: #7d7d7c;position:  absolute;font-family: 'Berkshire Swash', cursive;top: 0.3em;font-size: 1em;justify-content: space-around;padding: 0.4em;border-radius: 0.3em;right:  17em;}
 
-.msgWapp1{background:  white;padding:  0.3em;margin: 0.2em;display:  inline-block;border-radius: 0.2em;/* font-weight: normal; */}
+.msgWapp1{background:  white;padding:  0.3em;margin: 0.2em;border-radius: 0.2em;display: inline-block;margin: auto;/* font-weight: normal; */}
 
 .msgWapp2{background: #9efdc2;padding:  0.3em;margin: 0.2em;position:  relative;left: 2.4em;display:  inline-block;border-radius: 0.2em;/* font-weight: normal; */}
 
@@ -57,4 +51,40 @@ header button:hover{
 
 #highScore{
     
+}
+
+@media screen and (max-width: 1020px){
+    
+header{height: 9em;padding: 10px;direction:;}
+
+#monkeyLogo{width: 3em;top: 0.3em;}
+
+header h1{
+   font-size: 2.3em;
+   left:  0;
+}
+
+header h4{
+ font-size: 1em;
+ top: 0;
+}
+
+header button{height: 3.4e;width: 3.4em;m;top: 0.6em;right: 1em;border;: 50%color: whitefont-family:'Berkshire Swash', cursive;f;font-size: 0.9em;}
+
+#scoreWrap{top: 6.3em;right: 0em;width: 100%;display:  flex;justify-content:  space-around;padding:  0;}
+
+.msgWapp1{
+    padding: 0.3em;
+    margin: 0.2em;
+    width: 22%;
+    height: 2.3em;
+}
+
+.msgWapp2{padding:  0.3em;margin: 0.2em;left:  0;width:  22%;}
+
+.msgWapp1:before{border: none;}
+
+.msgWapp2:before{
+    border: none;
+}
 }

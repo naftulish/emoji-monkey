@@ -8,3 +8,11 @@ footer span a{
     color: #a09c9c;
     text-decoration: none;
 }
+
+@media screen and (max-width: 1020px){
+    footer{
+        font-size: 0.6em;
+        padding:  5px 0 5px 0;
+        }
+
+}

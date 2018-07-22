@@ -5,8 +5,10 @@
     <head>
 
         <title>emoji monkey</title>
-
+		<link rel="manifest" href="manifest.webmanifest">
         <link rel="stylesheet" href="assets/style.css"/>
+		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"/>
+
 
         <!--components-->
         <script src="states/app-content/app-content.js"></script>
@@ -29,6 +31,9 @@
         
         <script src="components/naf-msg/naf-msg.js"></script>
         <link rel="stylesheet" href="components/naf-msg/style.css"/>
+                
+        <script src="components/naf-efro/naf-efro.js"></script>
+        <link rel="stylesheet" href="components/naf-efro/style.css"/>
         
 
         <!--lib-->
@@ -36,10 +41,12 @@
         <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
     
     <body>
+
         <app-content></app-content>
 
         <script src="assets/script.js"></script>
