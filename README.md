@@ -1,4 +1,6 @@
 # emoji-monkey
 
-emoji monkey v1.0 
+emoji monkey v2.0 
 dev by naftali stein - naftulish@gmail.com
+
+$ build with "customElements" & jquery animate libery.
