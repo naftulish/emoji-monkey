@@ -40,4 +40,10 @@ naf-msg button{
     margin: 1.5em;
     font-family: 'Berkshire Swash', cursive;
 }
+
+@media screen and (max-width: 1020px){
+    #msg1 ,#msg2, #msg3 , #msg4{
+        width:90%;
+    }
+}
  

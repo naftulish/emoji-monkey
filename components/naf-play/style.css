@@ -8,6 +8,7 @@ naf-play{
 }
 
 .gameUnit{
+    position:  relative;
     background: #ced8ce;
     width: 5em;
     height: 5em;
@@ -15,4 +16,19 @@ naf-play{
     box-shadow: inset 0px 6px 18px grey;
     overflow:  hidden;
     border-radius: 0.3em;
+}
+
+@media screen and (max-width: 1020px){
+   naf-play{
+    display: block;
+    width: 100%;
+}
+
+
+    .gameUnit{
+            display:  inline-block;
+            width: 3rem;
+            height: 3rem;
+            margin: 0.2em;
+    }
 }
