@@ -22,14 +22,6 @@ $("document").ready(function () {
     });
 
 
-    /*
-    $("naf-monkey").click(function(){
-        var num = score.data("score"); 
-        num++;
-        score.html(`points: ${num}`);
-        score.data("score", num);
-    });
-    */
 
     function startGame() {
 
