@@ -82,6 +82,7 @@ $("document").ready(function () {
         $("#highScore").html(`High Score: ${localStorage.getItem("score")}`);
         $("naf-msg").remove();
     }
+    
     function updateScore (difference) {
         var num = score.data("score"), color = getScoreColor(difference);
         
@@ -103,19 +104,13 @@ $("document").ready(function () {
 
         if(score.data("score")>localStorage.getItem("score")){
             localStorage.setItem("score", score.data("score"));
-            var newMsg = $("<naf-msg>");
+            newMsg = $("<naf-msg>");
             newMsg.attr("data-msg", 4);
-            newMsg.on("click", function(){
-                $(this).remove();
-                $("#highScore").html(`High Score: ${localStorage.getItem("score")}`);
-            });
             $("body").append(newMsg);
         }else{
-            var newMsg = $("<naf-msg>");
+            newMsg = $("<naf-msg>");
             newMsg.attr("data-msg", 3);
-            newMsg.on("click", function(){$(this).remove()});
             $("body").append(newMsg);
-
         }
     }
 
