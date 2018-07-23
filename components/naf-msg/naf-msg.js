@@ -34,7 +34,7 @@ class NafMsg extends HTMLElement{
                 <div id="msg3">
                     <h3>game finished</h3>
                     <span>You have not set a new record :-( </span><br>
-                    <button id="playAgin">let's play agin!</button>        
+                    <button id="continue">let's play agin!</button>        
                 </div>
             `
         }else if(msg==4){
@@ -42,7 +42,7 @@ class NafMsg extends HTMLElement{
                 <div id="msg4">
                     <h3>Congratulations</h3>
                     <span>You have set a new record :-) <br> Let's try to pass it </span><br>
-                    <button id="playAgin">let's play!</button>        
+                    <button id="continue">let's play!</button>        
                 </div>
             `
         }
