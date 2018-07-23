@@ -71,13 +71,13 @@ $("document").ready(function () {
         }else{
             localStorage.setItem("user", $("#msg1 input").val());
             localStorage.setItem("score", 0);
-            updateScore();
+            updateHighScore();
         }
     });
 
-    $("#continue").on("click", updateScore);
+    $("#continue").on("click", updateHighScore);
     
-    function updateScore () {
+    function updateHighScore () {
         $("#player").html(`player: ${localStorage.getItem("user")}`);
         $("#highScore").html(`High Score: ${localStorage.getItem("score")}`);
         $("naf-msg").remove();
