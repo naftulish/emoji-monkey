@@ -5,6 +5,7 @@ $
 $("document").ready(function () {
     
     var isGameRuning = false, newMsg;
+    var score = $("#score");
 
     if (localStorage.getItem("user")) {
         newMsg = $("<naf-msg>");
@@ -23,7 +24,6 @@ $("document").ready(function () {
 
     /*
     $("naf-monkey").click(function(){
-        var score = $("#score");
         var num = score.data("score"); 
         num++;
         score.html(`points: ${num}`);
@@ -36,7 +36,7 @@ $("document").ready(function () {
         isGameRuning = true;
 
         var num = 60, timer;
-        $("#score").html('points: 0');
+        score.html('points: 0');
         timer = setInterval(function () {
             if (num) {
                 num--;
@@ -95,8 +95,8 @@ $("document").ready(function () {
 
         isGameRuning=false;
 
-        if($("#score").data("score")>localStorage.getItem("score")){
-            localStorage.setItem("score", $("#score").data("score"));
+        if(score.data("score")>localStorage.getItem("score")){
+            localStorage.setItem("score", score.data("score"));
             var newMsg = $("<naf-msg>");
             newMsg.attr("data-msg", 4);
             newMsg.on("click", function(){
@@ -113,9 +113,8 @@ $("document").ready(function () {
         }
     }
 
-      $("body").on("click",function(e) {
+    $("body").on("click",function(e) {
        if (isGameRuning && e.target.id == "monkey"){
-          var score = $("#score");
           var num = score.data("score"); 
           num++;
           score.html(`points: ${num}`);
@@ -123,14 +122,12 @@ $("document").ready(function () {
           score.css("color","")
        }else if(isGameRuning && $(e.target).attr("class")=="gameUnit"){
             console.log("oopes");
-            var score = $("#score");
             var num = score.data("score");
             num--;
             score.html(`points: ${num}`);
             score.data("score", num);
             score.css("color","red")
        }else if(isGameRuning && e.target.id=="efro"){
-            var score = $("#score");
             var num = score.data("score");
             num-=2;
             score.html(`points: ${num}`);
