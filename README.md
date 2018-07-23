@@ -6,13 +6,13 @@ http://shtain.prog-sites.co.il/app/
 emoji monkey v2.0 
 dev by naftali stein - naftulish@gmail.com
 
-build with native javaScript "customElements" & jquery libery for animate.
+build with native javaScript "customElements" & jquery library for animate.
 
-// LATEST UPDATE
+## LATEST UPDATE
 
-- Add media query for responsiv, one breakPoint at 1020px.
+- Add media query for responsive, one breakPoint at 1020px.
 - by clicking empty window you lose 1 point.
-- by clicking on a image i'snt a monkey you lose 2 points. 
+- by clicking on a image isn't a monkey you lose 2 points. 
 
 ---------------
 
