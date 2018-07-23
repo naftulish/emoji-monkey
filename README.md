@@ -8,7 +8,7 @@ dev by naftali stein - naftulish@gmail.com
 
 build with native javaScript "customElements" & jquery libery for animate.
 
-// LATEST UPDATE
+## LATEST UPDATE
 
 - Add media query for responsiv, one breakPoint at 1020px.
 - by clicking empty window you lose 1 point.
