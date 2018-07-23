@@ -71,17 +71,17 @@ $("document").ready(function () {
         }else{
             localStorage.setItem("user", $("#msg1 input").val());
             localStorage.setItem("score", 0);
-            $("#player").html(`player: ${$("#msg1 input").val()}`);
-            $("#highScore").html(`High Score: 0`);
-            $("naf-msg").remove();
+            updateScore();
         }
     });
 
-    $("#continue").on("click", function(){
-            $("#player").html(`player: ${localStorage.getItem("user")}`);
-            $("#highScore").html(`High Score: ${localStorage.getItem("score")}`);
-            $("naf-msg").remove();
-    });
+    $("#continue").on("click", updateScore);
+    
+    function updateScore () {
+        $("#player").html(`player: ${localStorage.getItem("user")}`);
+        $("#highScore").html(`High Score: ${localStorage.getItem("score")}`);
+        $("naf-msg").remove();
+    }
 
     function finishGame(){
 
