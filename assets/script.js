@@ -82,7 +82,21 @@ $("document").ready(function () {
         $("#highScore").html(`High Score: ${localStorage.getItem("score")}`);
         $("naf-msg").remove();
     }
+    function updateScore (difference) {
+        var num = score.data("score"), color = getScoreColor(difference);
+        
+        num = num + difference;
+        score.html(`points: ${num}`);
+        score.data("score", num);
+        if (color)
+            score.css("color",color)
+    }
 
+    function getScoreColor(scoreDifference){
+        if(scoreDifference > 0) return "green";
+        else if(scoreDifference < 0) return "red";
+    }
+    
     function finishGame(){
 
         isGameRuning=false;
@@ -106,26 +120,14 @@ $("document").ready(function () {
     }
 
     $("body").on("click",function(e) {
-       if (isGameRuning && e.target.id == "monkey"){
-          var num = score.data("score"); 
-          num++;
-          score.html(`points: ${num}`);
-          score.data("score", num);
-          score.css("color","")
-       }else if(isGameRuning && $(e.target).attr("class")=="gameUnit"){
+        if (isGameRuning && e.target.id == "monkey"){
+           updateScore(1);
+        }else if(isGameRuning && $(e.target).attr("class")=="gameUnit"){
             console.log("oopes");
-            var num = score.data("score");
-            num--;
-            score.html(`points: ${num}`);
-            score.data("score", num);
-            score.css("color","red")
-       }else if(isGameRuning && e.target.id=="efro"){
-            var num = score.data("score");
-            num-=2;
-            score.html(`points: ${num}`);
-            score.data("score", num);
-            score.css("color","red")
-       }
+            updateScore(-1);
+        }else if(isGameRuning && e.target.id=="efro"){
+            updateScore(-2);
+        }
   });
 
 });
