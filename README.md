@@ -1,6 +1,6 @@
 # Emoji-Monkey
 
-http://shtain.prog-sites.co.il/app/
+https://naftulish.github.io/emoji-monkey/
 
 
 emoji monkey v2.0 
